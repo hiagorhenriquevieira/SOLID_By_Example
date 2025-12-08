@@ -45,6 +45,19 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="S-SingleResponsability\After\Entities\Item.cs" />
+    <Compile Include="S-SingleResponsability\After\Entities\Order.cs" />
+    <Compile Include="S-SingleResponsability\After\Interfaces\IEmailSender.cs" />
+    <Compile Include="S-SingleResponsability\After\Interfaces\IInvoiceService.cs" />
+    <Compile Include="S-SingleResponsability\After\Interfaces\ILogger.cs" />
+    <Compile Include="S-SingleResponsability\After\Interfaces\IOrderRepository.cs" />
+    <Compile Include="S-SingleResponsability\After\Interfaces\IUnitOfWork.cs" />
+    <Compile Include="S-SingleResponsability\After\Loggers\ConsoleLogger.cs" />
+    <Compile Include="S-SingleResponsability\After\Repositories\OrderRepository.cs" />
+    <Compile Include="S-SingleResponsability\After\Services\EmailSender.cs" />
+    <Compile Include="S-SingleResponsability\After\Services\InvoiceService.cs" />
+    <Compile Include="S-SingleResponsability\After\Services\OrderService.cs" />
+    <Compile Include="S-SingleResponsability\After\UoW\UnitOfWork .cs" />
     <Compile Include="S-SingleResponsability\Before\MessyServiceOrder.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,7 +69,6 @@
     <Folder Include="I-InterfaceSegregation\" />
     <Folder Include="L-LiskovSubstitution\" />
     <Folder Include="O-OpenClosed\" />
-    <Folder Include="S-SingleResponsability\After\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
