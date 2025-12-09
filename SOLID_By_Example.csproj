@@ -63,6 +63,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="README.md" />
+    <None Include="S-SingleResponsability\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="D-DependencyInversion\" />
