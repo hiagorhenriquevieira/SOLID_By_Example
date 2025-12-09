@@ -1,6 +1,6 @@
 ﻿# SOLID-By-Example
 Welcome to this repository dedicated to learning and applying the SOLID principles through practical, real-life code examples.
-Here you will find legacy anti-pattern code and refactored versions, making it easy to understand the before/after impact of proper software design.
+Here you'll find legacy anti-pattern code and refactored versions, making it easy to understand the before/after impact of proper software design.
 
 Whether you’re a beginner or an experienced developer, this repo is a valuable reference for writing clean, maintainable, and scalable software.
 ------ 
@@ -8,11 +8,11 @@ Whether you’re a beginner or an experienced developer, this repo is a valuable
 
 - ❌ Legacy code (bad practices)
 
-- ✔️ Refactored code following SOLID
+- ✔️ Refactored code following SOLID principles
 
 - 🧩 Clear explanations for each principle
 
-- 🧪 Simple unit tests (MS Test)
+- 🧪 Simple unit tests using MS Test
 
 - 🗂️ Organized structure for easy navigation
 
@@ -109,7 +109,7 @@ And explore the examples freely.
 
  - Add diagrams explaining each principle
 
--  Record a short video walkthrough (Maybe) 
+-  Record a short video walkthrough 
 
 ### 🤝 Contributing
 
