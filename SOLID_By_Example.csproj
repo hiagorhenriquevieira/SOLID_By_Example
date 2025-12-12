@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="O-OpenClosed\After\Entities\BlackFridayDiscount.cs" />
+    <Compile Include="O-OpenClosed\After\Entities\FixedValueDiscount.cs" />
+    <Compile Include="O-OpenClosed\After\Entities\NoDiscount.cs" />
+    <Compile Include="O-OpenClosed\After\Entities\PercentDiscount.cs" />
+    <Compile Include="O-OpenClosed\After\Interfaces\IDiscount.cs" />
+    <Compile Include="O-OpenClosed\After\Services\PriceCalculator.cs" />
+    <Compile Include="O-OpenClosed\Before\MessyPriceCalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S-SingleResponsability\After\Entities\Item.cs" />
@@ -62,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="O-OpenClosed\README.md" />
     <None Include="README.md" />
     <None Include="S-SingleResponsability\README.md" />
   </ItemGroup>
@@ -69,7 +77,6 @@
     <Folder Include="D-DependencyInversion\" />
     <Folder Include="I-InterfaceSegregation\" />
     <Folder Include="L-LiskovSubstitution\" />
-    <Folder Include="O-OpenClosed\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

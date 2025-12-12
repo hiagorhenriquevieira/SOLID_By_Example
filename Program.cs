@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SOLID_By_Example.O_OpenClosed.After.Entities;
+using SOLID_By_Example.O_OpenClosed.After.Services;
+using SOLID_By_Example.O_OpenClosed.Before;
+using System;
 
 namespace SOLID_By_Example
 {
@@ -10,6 +9,30 @@ namespace SOLID_By_Example
     {
         static void Main(string[] args)
         {
+            OpenClosedAfter();
+            OpenClosedBefore();
+        }
+
+        private static void OpenClosedBefore()
+        {
+            var calculator = new MessyPriceCalculator();
+
+            decimal originalPrice = 100;
+
+            decimal finalPrice = calculator.Calculate(originalPrice, "Black_Friday_Coupon");
+
+            Console.WriteLine($"Final price to be paid: {finalPrice}");
+        }
+
+        private static void OpenClosedAfter()
+        {
+            var calculator = new PriceCalculator();
+
+            decimal originalPrice = 100;
+
+            decimal finalPrice = calculator.Calculate(originalPrice, new BlackFridayDiscount());
+
+            Console.WriteLine($"Final price to be paid:{finalPrice}");
         }
     }
 }
