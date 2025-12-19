@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="L-LiskovSubstitution\Before\BankAccount.cs" />
+    <Compile Include="L-LiskovSubstitution\Before\CheckingAccount.cs" />
+    <Compile Include="L-LiskovSubstitution\Before\SalaryAccount.cs" />
     <Compile Include="O-OpenClosed\After\Entities\BlackFridayDiscount.cs" />
     <Compile Include="O-OpenClosed\After\Entities\FixedValueDiscount.cs" />
     <Compile Include="O-OpenClosed\After\Entities\NoDiscount.cs" />
@@ -76,7 +79,7 @@
   <ItemGroup>
     <Folder Include="D-DependencyInversion\" />
     <Folder Include="I-InterfaceSegregation\" />
-    <Folder Include="L-LiskovSubstitution\" />
+    <Folder Include="L-LiskovSubstitution\After\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

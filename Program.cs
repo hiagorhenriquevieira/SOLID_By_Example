@@ -1,4 +1,5 @@
-﻿using SOLID_By_Example.O_OpenClosed.After.Entities;
+﻿using SOLID_By_Example.L_LiskovSubstitution.Before;
+using SOLID_By_Example.O_OpenClosed.After.Entities;
 using SOLID_By_Example.O_OpenClosed.After.Services;
 using SOLID_By_Example.O_OpenClosed.Before;
 using System;
@@ -11,6 +12,8 @@ namespace SOLID_By_Example
         {
             OpenClosedAfter();
             OpenClosedBefore();
+
+           LiskovSubstitutionBefore();
         }
 
         private static void OpenClosedBefore()
@@ -33,6 +36,13 @@ namespace SOLID_By_Example
             decimal finalPrice = calculator.Calculate(originalPrice, new BlackFridayDiscount());
 
             Console.WriteLine($"Final price to be paid:{finalPrice}");
+        }
+
+        private static void LiskovSubstitutionBefore()
+        {
+            var account = new SalaryAccount(initialBalance: 500);
+
+            account.Withdraw(value: 100);
         }
     }
 }
