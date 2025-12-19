@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="L-LiskovSubstitution\After\Entities\BankAccount.cs" />
+    <Compile Include="L-LiskovSubstitution\After\Entities\CheckingAccount.cs" />
+    <Compile Include="L-LiskovSubstitution\After\Entities\SalaryAccount.cs" />
+    <Compile Include="L-LiskovSubstitution\After\Interfaces\IAccountWithWithdrawal.cs" />
     <Compile Include="L-LiskovSubstitution\Before\BankAccount.cs" />
     <Compile Include="L-LiskovSubstitution\Before\CheckingAccount.cs" />
     <Compile Include="L-LiskovSubstitution\Before\SalaryAccount.cs" />
@@ -79,7 +83,6 @@
   <ItemGroup>
     <Folder Include="D-DependencyInversion\" />
     <Folder Include="I-InterfaceSegregation\" />
-    <Folder Include="L-LiskovSubstitution\After\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
