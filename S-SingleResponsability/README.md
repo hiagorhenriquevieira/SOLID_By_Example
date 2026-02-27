@@ -21,7 +21,7 @@ This helps keep your code:
 
 ## ❌ Before (Violation of SRP)
 
-In the Antes/ folder, you will find a class that:
+In the Before/ folder, you will find a class that:
 
 - Handles business logic
 
