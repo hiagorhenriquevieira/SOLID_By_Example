@@ -77,7 +77,7 @@ The project structure becomes more organized and aligned with modern software ar
 - Onion Architecture
 - Domain-Driven Design (DDD)
 
-##🧠 Conclusion
+## 🧠 Conclusion
 
 The Dependency Inversion Principle is essential for building professional and maintainable software systems.
 
