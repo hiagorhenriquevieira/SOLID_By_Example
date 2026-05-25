@@ -43,6 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="I-InterfaceSegregation\After\Entitties\HumanWorker.cs" />
+    <Compile Include="I-InterfaceSegregation\After\Entitties\RobotWorker .cs" />
+    <Compile Include="I-InterfaceSegregation\After\Interfaces\IEatable.cs" />
+    <Compile Include="I-InterfaceSegregation\After\Interfaces\ISleepable.cs" />
+    <Compile Include="I-InterfaceSegregation\After\Interfaces\IWorkable.cs" />
+    <Compile Include="I-InterfaceSegregation\Before\Entities\HumanWorker.cs" />
+    <Compile Include="I-InterfaceSegregation\Before\Entities\RobotWorker.cs" />
+    <Compile Include="I-InterfaceSegregation\Before\Interfaces\IWorker.cs" />
     <Compile Include="L-LiskovSubstitution\After\Entities\BankAccount.cs" />
     <Compile Include="L-LiskovSubstitution\After\Entities\CheckingAccount.cs" />
     <Compile Include="L-LiskovSubstitution\After\Entities\SalaryAccount.cs" />
@@ -76,13 +84,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="I-InterfaceSegregation\README.md" />
+    <None Include="L-LiskovSubstitution\README.md" />
     <None Include="O-OpenClosed\README.md" />
     <None Include="README.md" />
     <None Include="S-SingleResponsability\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="D-DependencyInversion\" />
-    <Folder Include="I-InterfaceSegregation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
