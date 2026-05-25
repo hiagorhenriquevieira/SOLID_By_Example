@@ -16,6 +16,9 @@ namespace SOLID_By_Example
 
             LiskovSubstitutionBefore();
             LiskovSubstitutionAfter();
+
+            DependencyInversionBefore();
+            DependencyInversionAfter();
         }
 
         private static void OpenClosedBefore()
@@ -71,5 +74,22 @@ namespace SOLID_By_Example
         {
             account.Withdraw(100);
         }
+
+        private static void DependencyInversionBefore()
+        {
+            D_DependencyInversion.Before.UserService userService = new D_DependencyInversion.Before.UserService();
+
+            userService.RegisterUser("JohnDoe");
+        }
+
+        private static void DependencyInversionAfter()
+        {
+            D_DependencyInversion.After.Interfaces.IDatabase database = new D_DependencyInversion.After.Infrastructure.Databases.MySqlDatabase();
+
+            D_DependencyInversion.After.Services.UserService userService = new D_DependencyInversion.After.Services.UserService(database);
+
+            userService.RegisterUser("JohnDoe");
+        }
+
     }
 }

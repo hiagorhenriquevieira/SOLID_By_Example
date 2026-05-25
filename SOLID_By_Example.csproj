@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="D-DependencyInversion\After\Infrastructure\Databases\MySqlDatabase.cs" />
+    <Compile Include="D-DependencyInversion\After\Infrastructure\Databases\PostgreSqlDatabase.cs" />
+    <Compile Include="D-DependencyInversion\After\Interfaces\IDatabase.cs" />
+    <Compile Include="D-DependencyInversion\After\Services\UserService.cs" />
+    <Compile Include="D-DependencyInversion\Before\MySqlDatabase.cs" />
     <Compile Include="I-InterfaceSegregation\After\Entitties\HumanWorker.cs" />
     <Compile Include="I-InterfaceSegregation\After\Entitties\RobotWorker .cs" />
     <Compile Include="I-InterfaceSegregation\After\Interfaces\IEatable.cs" />
@@ -84,14 +89,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="D-DependencyInversion\README.md" />
     <None Include="I-InterfaceSegregation\README.md" />
     <None Include="L-LiskovSubstitution\README.md" />
     <None Include="O-OpenClosed\README.md" />
     <None Include="README.md" />
     <None Include="S-SingleResponsability\README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="D-DependencyInversion\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
